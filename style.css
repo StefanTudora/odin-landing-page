@@ -1,4 +1,8 @@
 
+body {
+    font-family: 'Roboto';
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -17,6 +21,14 @@
     color: white;
     font-size: 36px;
     font-weight: 400
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
 }
 
 .header ul {
@@ -38,6 +50,9 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
 }
 
 .cards ul {
@@ -49,10 +64,35 @@
     height: 300px;
     border: 10px;
     border-radius: 10px;
-    border-color: blue;
+    border-color: #3882F6;
     border-style: solid;
 }
 
 .quote {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    flex: 1;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.quote h5 {
+    margin-left: auto;
+}
+
+.quote blockquote {
+    width: 400px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    gap: 20px;
+    padding: 50px;
 }
