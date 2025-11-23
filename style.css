@@ -3,6 +3,29 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Generic STYLE section */
+
+button {
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+body ul {
+    list-style-type: none;
+}
+
+.container h1,
+.container p {
+    color: white;
+}
+
+/* Navbar STYLE section */
+
 .navbar a {
     text-decoration: none; 
     color: white;
@@ -26,33 +49,38 @@ body {
     flex: auto;
     justify-content: flex-end;
     gap: 30px;
-    list-style-type: none;
     padding: 10px;
 }
 
-.intro {
-    display: flex;
-    flex : 1;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-    padding: 50px;;
-}
+/* Header STYLE section */
 
-.header ul {
+.intro .container {
     display: flex;
-    gap: 20px;
-}
-
-.card-list {
-    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    gap: 20px;
+    padding: 50px;
+    background-color: #1F2937;
 }
 
-.cards {
+.intro .left-side {
+    display: flex;
+    flex-direction: column;
+    width: 900px
+}
+
+.intro .container p {
+    font-size: 24px;
+}
+
+.intro .container h1 {
+    font-size: 48px;
+}
+
+/* Cards STYLE section */
+
+.cards .container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,8 +91,12 @@ body {
     color: #1F2937;
 }
 
-.cards ul {
-    list-style-type: none;
+.card-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .card-list img {
@@ -76,27 +108,31 @@ body {
     border-style: solid;
 }
 
-.quote {
+/* Quote STYLE section */
+
+.quote{
     background-color: #E5E7EB;
+}
+
+.quote .container {
     display: flex;
-    font-size: 36px;
+    font-size: 24px;
     flex-direction: column;
     justify-self: center;
-    align-items: flex-end;
-    flex: 1;
     padding: 30px;
-    border-radius: 20px;
 }
 
 .quote blockquote {
     width: 900px;
 }
 
-.contents {
-    gap: 50px
+.quote h5 { 
+    margin-left: auto;
 }
 
-.action-section {
+/* Action STYLE section */
+
+.action {
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -112,7 +148,7 @@ body {
     width: 1000px;
 }
 
-.action-section .action{
+.action .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -121,25 +157,11 @@ body {
 }
 
 .action button {
-    border-radius: 10px;
     border-width: 5px;
     border-color: white;
-    background-color: #3882F6;
-    color: white;
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 600;
 }
 
-.hero .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;;
-    gap: 20px;
-    padding: 50px;
-}
+/* Footer STYLE section */
 
 .footer {
     display: flex;
