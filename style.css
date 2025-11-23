@@ -1,34 +1,42 @@
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 300;
-    color: #1F2937;
+.navbar a {
+    text-decoration: none; 
+    color: white;
 }
 
-.header {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: #1F2937;
     color: white;
+    flex-wrap: wrap;
     font-size: 36px;
     font-weight: 400
 }
 
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style-type: none;
+    padding: 10px;
+}
+
 .intro {
     display: flex;
-    justify-content: space-between;
+    flex : 1;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 50px;
+    gap: 200px;
+    padding: 50px;;
 }
 
 .header ul {
@@ -38,7 +46,7 @@ body {
 
 .card-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     gap: 50px;
@@ -71,28 +79,75 @@ body {
 .quote {
     background-color: #E5E7EB;
     display: flex;
+    font-size: 36px;
     flex-direction: column;
     justify-self: center;
-    align-items: center;
+    align-items: flex-end;
     flex: 1;
     padding: 30px;
     border-radius: 20px;
 }
 
-.quote h5 {
-    margin-left: auto;
-}
-
 .quote blockquote {
-    width: 400px;
+    width: 900px;
 }
 
 .contents {
+    gap: 50px
+}
+
+.action-section {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    gap: 50px;
+    background-color: #3882F6;
+    color: white;
+    flex: auto;
+    padding: 50px;
+    width: 1000px;
+}
+
+.action-section .action{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex: auto;
+    gap: 50px;
+}
+
+.action button {
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    background-color: #3882F6;
+    color: white;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;;
     gap: 20px;
     padding: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    background-color: #1F2937;
+    height: 100px;
 }

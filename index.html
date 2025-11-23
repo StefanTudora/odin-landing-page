@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
 
-    <div class="header">
-        <div class="logo">Champions Logo</div>
-        <ul>
-            <li>Champions in your area</li>
-            <li>Support</li>
-            <li>Contact</li>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Kintted Odin</div>
+        <ul class="nav-links">
+            <li><a href="a">Shops in your area</a></li>
+            <li><a href="a">Support</a></li>
+            <li><a href="a">Contact</a></li>
         </ul>
-    </div>
-  
-    <div class="contents">
+    </nav>
 
-        <div class="intro" style="background-color: #1F2937;">
-            <div class="left-side">
-                <p style="font-size: 48px; font-weight: 900; color: white;">Welcome to Knitted Odin Shop!</p>
-                <button>Shop now</button>
+    <header class="hero">
+        <div class="container" style="background-color: #1F2937;">
+            <div class="left-side" style="width: 700px;">
+                <h1 style="color: white; font-size: 48px;">Welcome to Knitted Odin Shop!</h1>
+                <p style="color: white; font-size: 24px;">Centuries of raiding and pillaging have
+                    filled our hearts with glee. Yet, braving the sea remains a miserable ordeal—waves, storms, and the
+                    occasional seasick warrior. Thankfully, the legendary Ragnar Lothbrok once stumbled upon the
+                    glorious pastime of knitting, a craft that kept his hands busy and his sanity intact through the
+                    fiercest tempests. Ever since, we've proudly upheld his tradition, producing knitted treasures as
+                    fine as our battle axes—though considerably less dangerous</p>
+                <button
+                    style="border-radius: 10px; background-color: #3882F6; color: white; width: 150px; height: 50px; font-size: 20px;">Shop
+                    now</button>
             </div>
             <img src="assets/main.jpeg" alt="Viking image">
         </div>
+    </header>
 
-        <div class="cards">
-            Here are just some of our fearsest knitted champions:   
+    <section class="cards">
+        <div class="container">
+            <h3>Here are just some of our fearsest knitted champions:</h3>
             <ul class="card-list">
                 <li>
                     <div class="card">
@@ -53,21 +64,36 @@
                 </li>
             </ul>
         </div>
+    </section>
 
-        <div class="quote">
-            <blockquote>I’m beyond impressed with these knitted Viking toys! The craftsmanship is outstanding—every detail from the tiny helmets to the braided beards shows so much care and creativity. They’re soft, durable, and perfect both as collectibles and as gifts for kids. Shipping was quick, and the packaging made it feel extra special. I’ll definitely be coming back for more—these are truly unique treasures!</blockquote>
-            <h5>-A happy customer</h5>
+    <section class="quote">
+        <div class="container">
+            <blockquote>I’m beyond impressed with these knitted Viking toys! The craftsmanship is outstanding—every
+                detail from the tiny helmets to the braided beards shows so much care and creativity. They’re soft,
+                durable, and perfect both as collectibles and as gifts for kids. Shipping was quick, and the packaging
+                made it feel extra special. I’ll definitely be coming back for more—these are truly unique treasures!
+            </blockquote>
+            <h5>-A Lindisfarne man of the cloth</h5>
         </div>
+    </section>
 
-        <div class="action">
-            Call to action
+    <section class="action">
+        <div class="contianer">
+            <div class="action-text">
+                <h2>Call to action! It's time!</h2>
+                <p>Sign up for our newsletter to stay updated on the latest knitted Viking news and exclusive offers!
+                </p>
+            </div>
+            <button>
+                Sign up!
+            </button>
         </div>
-    </div>
+    </section>
 
-
-    <div class="footer">
+    <footer class="footer">
         Copyright @ The Odin Project 2021
-    </div>
+    </footer>
 
-  </body>
+</body>
+
 </html>
